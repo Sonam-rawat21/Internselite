@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TaskPilot - Smart Task Manager</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚀 TODO-LIST</h1>
+<button id="themeSwitcher">🎨 Change Theme</button>
+
+<div class="input-section">
+
+<input type="text" id="taskInput" placeholder="Enter task">
+
+<select id="priority">
+<option value="high">High</option>
+<option value="medium">Medium</option>
+<option value="low">Low</option>
+</select>
+
+<input type="date" id="dueDate">
+
+<button id="addBtn">Add</button>
+
+</div>
+
+<div class="filters">
+<button data-filter="all">All</button>
+<button data-filter="active">Active</button>
+<button data-filter="completed">Completed</button>
+</div>
+
+<div class="stats">
+<span id="total">Total: 0</span>
+<span id="completed">Completed: 0</span>
+<span id="pending">Pending: 0</span>
+</div>
+
+<button id="darkToggle">🌙 Dark Mode</button>
+
+<ul id="taskList"></ul>
+
+<p id="emptyMessage">You're all caught up!</p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
